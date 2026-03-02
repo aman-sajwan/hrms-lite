@@ -1,4 +1,4 @@
-const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+const BASE_URL = "https://hrms-lite-un7a.vercel.app/";
 
 async function request(path, options = {}) {
   const res = await fetch(`${BASE_URL}${path}`, {
