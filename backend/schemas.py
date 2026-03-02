@@ -13,10 +13,8 @@ from typing import Literal
 class EmployeeCreate(BaseModel):
     employee_id: str
     full_name:   str
-    email:       EmailStr          # Pydantic auto-validates email format!
+    email:       EmailStr         
     department:  str
-
-    # Custom validator: strip whitespace, ensure non-empty
     @field_validator("employee_id", "full_name", "department")
     @classmethod
     def must_not_be_blank(cls, v: str) -> str:
@@ -32,7 +30,7 @@ class EmployeeOut(BaseModel):
     department:  str
 
     class Config:
-        from_attributes = True   # Tells Pydantic to read from SQLAlchemy model attributes
+        from_attributes = True  
 
 
 # ─── Attendance ───────
@@ -40,7 +38,7 @@ class EmployeeOut(BaseModel):
 class AttendanceCreate(BaseModel):
     employee_id: str
     date:        date
-    status:      Literal["Present", "Absent"]  # Only these two values allowed
+    status:      Literal["Present", "Absent"]  
 
 
 class AttendanceOut(BaseModel):
