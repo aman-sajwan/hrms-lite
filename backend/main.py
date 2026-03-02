@@ -13,7 +13,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",  
-        "https://hrms-lite-frontend.vercel.app" 
+        "https://hrms-lite-demo-eight.vercel.app" 
     ],
     allow_credentials=True,
     allow_methods=["*"],
