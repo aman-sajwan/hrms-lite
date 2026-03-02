@@ -1,7 +1,5 @@
  /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
@@ -17,10 +15,9 @@
   --muted:     #6b7280;
   --radius:    12px;
   --sidebar-w: 230px;
-  --font-head: 'Syne', sans-serif;
-  --font-body: 'DM Sans', sans-serif;
-}
-
+    --font-head: 'Poppins', sans-serif;
+    --font-body: 'Poppins', sans-serif;
+  }
 body {
   background: var(--bg);
   color: var(--text);
@@ -77,7 +74,6 @@ body {
 }
 .brand-text em {
   font-style: normal;
-  color: var(--accent2);
   font-size: 14px;
 }
 
