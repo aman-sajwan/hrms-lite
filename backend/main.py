@@ -11,7 +11,7 @@ app = FastAPI(title="HRMS Lite API", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],          # In production: replace * with your frontend URL
+    allow_origins=["https://hrms-lite-backend-sigma.vercel.app/"],    
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
